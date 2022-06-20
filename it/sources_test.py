@@ -20,6 +20,7 @@ import it
 
 @it.random_rally_config
 def test_sources(cfg):
+    raise ValueError()
     port = 19200
     it.wait_until_port_is_free(port_number=port)
     assert (

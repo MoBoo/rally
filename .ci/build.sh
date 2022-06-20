@@ -30,8 +30,6 @@ function update_pyenv {
 }
 
 function build {
-  echo "failing on purpose"
-  exit 1
   export THESPLOG_FILE="${THESPLOG_FILE:-${RALLY_HOME}/.rally/logs/actor-system-internal.log}"
   # this value is in bytes, the default is 50kB. We increase it to 200kiB.
   export THESPLOG_FILE_MAXSIZE=${THESPLOG_FILE_MAXSIZE:-204800}
